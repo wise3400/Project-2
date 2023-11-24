@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 // https://www.codingthesmartway.com/how-to-fetch-api-data-with-react/
 // https://www.geeksforgeeks.org/react-js-pokemon-app/
-
+// https://pokeapi.co/
 export default function Pokemon() {
   const [thePokemons, setPokemons] = useState([]);
   
