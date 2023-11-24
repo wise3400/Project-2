@@ -60,52 +60,52 @@ export default function Pokemon() {
             
             {/* Regular Stats */}
             <ul>
-            <li>Description 1: {pokemon.stats[0].stat.name} </li>
+            <li>Regular Stat 1: {pokemon.stats[0].stat.name} </li>
             </ul>
 
             <ul>
-            <li>Description 2: {pokemon.stats[1].stat.name} </li>
+            <li>Regular Stat 2: {pokemon.stats[1].stat.name} </li>
             </ul>
 
             <ul>
-            <li>Description 3: {pokemon.stats[2].stat.name} </li>
+            <li>Regular Stat 3: {pokemon.stats[2].stat.name} </li>
             </ul>
 
             <ul>
-            <li>Description 4: {pokemon.stats[3].stat.name} </li>
+            <li>Regular Stat 4: {pokemon.stats[3].stat.name} </li>
             </ul>
 
             <ul>
-            <li>Description 5: {pokemon.stats[4].stat.name} </li>
+            <li>Regular Stat 5: {pokemon.stats[4].stat.name} </li>
             </ul>
 
             <ul>
-            <li>Description 6: {pokemon.stats[5].stat.name} </li>
+            <li>Regular Stat 6: {pokemon.stats[5].stat.name} </li>
             </ul>
 
              {/* Base Stats */}
             <ul>
-            <li>Description 1a: {pokemon.stats[0].base_stat} </li>
+            <li>Base Stat 1a: {pokemon.stats[0].base_stat} </li>
             </ul>
 
             <ul>
-            <li>Description 1b: {pokemon.stats[1].base_stat} </li>
+            <li>Base Stat 1b: {pokemon.stats[1].base_stat} </li>
             </ul>
             
             <ul>
-            <li>Description 1c: {pokemon.stats[2].base_stat} </li>
+            <li>Base Stat 1c: {pokemon.stats[2].base_stat} </li>
             </ul>
 
             <ul>
-            <li>Description 1d: {pokemon.stats[3].base_stat} </li>
+            <li>Base Stat 1d: {pokemon.stats[3].base_stat} </li>
             </ul>
             
             <ul>
-            <li>Description 1e: {pokemon.stats[4].base_stat} </li>
+            <li>Base Stat 1e: {pokemon.stats[4].base_stat} </li>
             </ul>
 
             <ul>
-            <li>Description 1f: {pokemon.stats[5].base_stat} </li>
+            <li>Base Stat 1f: {pokemon.stats[5].base_stat} </li>
             </ul>
           
           
