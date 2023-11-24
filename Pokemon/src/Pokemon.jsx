@@ -46,8 +46,16 @@ export default function Pokemon() {
            {/* Names */}
             {pokemon.name}
            
+
            {/* Images */}
             <img src={pokemon.sprites.other.dream_world.front_default} alt={pokemon.name} />
+            
+            
+            <ul>
+              {/* Pokemon Types */}
+              <li>Type: {pokemon.types[0].type.name} </li>
+            </ul>
+            
             
             {/* Height & Weight */}
             <ul>
