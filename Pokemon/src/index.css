@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -12,7 +14,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+/* 
 a {
   font-weight: 500;
   color: #646cff;
@@ -52,9 +54,9 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -65,4 +67,40 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+
+#root{
+  width: 100%;
 }
+
+.flex-parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  padding: 1em;
+  row-gap: 3em;
+  
+}
+
+.card {
+  width: 11em;
+  height: 11em;
+  /* overflow: hidden; */
+  background-color: rgb(46, 169, 169);
+  font-weight: bold;
+  
+}
+
+.card p{
+  text-align: center;
+  font-family: 'Pokemon Solid', sans-serif;
+}
+
+.card img {
+  padding: 1em;
+  max-height: 90%;
+  max-width: 90%;
+}
+

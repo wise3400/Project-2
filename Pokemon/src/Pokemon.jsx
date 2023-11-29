@@ -38,94 +38,88 @@ export default function Pokemon() {
   }, []);
 
   return (
-    <div>
-      <h1>Pokemon</h1>
-      <ul>
+
+        <div className='flex-parent'>
         {thePokemons.map((pokemon, index) => (
-          <li key={index}>
-            
-           {/* Names */}
-            {pokemon.name}
-           
+          <div className='card'key={index}>
+          
+          {/* Names */}
+            <p> {pokemon.name} </p>
 
            {/* Images */}
             <img src={pokemon.sprites.other.dream_world.front_default} alt={pokemon.name} />
             
-            
-            <ul>
-              {/* Pokemon Types */}
-              <li>Type: {pokemon.types[0].type.name} </li>
-            </ul>
-            
-            
-            {/* Height & Weight */}
-            <ul>
-              <li>Height: {pokemon.height}</li>
-            </ul>
-            
-            <ul>
-            <li>Weight: {pokemon.weight}</li>
-            </ul>
-            
-            {/* Regular Stats */}
-            <ul>
-            <li>Regular Stat 1: {pokemon.stats[0].stat.name} </li>
-            </ul>
-
-            <ul>
-            <li>Regular Stat 2: {pokemon.stats[1].stat.name} </li>
-            </ul>
-
-            <ul>
-            <li>Regular Stat 3: {pokemon.stats[2].stat.name} </li>
-            </ul>
-
-            <ul>
-            <li>Regular Stat 4: {pokemon.stats[3].stat.name} </li>
-            </ul>
-
-            <ul>
-            <li>Regular Stat 5: {pokemon.stats[4].stat.name} </li>
-            </ul>
-
-            <ul>
-            <li>Regular Stat 6: {pokemon.stats[5].stat.name} </li>
-            </ul>
-
-             {/* Base Stats */}
-            <ul>
-            <li>Base Stat 1a: {pokemon.stats[0].base_stat} </li>
-            </ul>
-
-            <ul>
-            <li>Base Stat 1b: {pokemon.stats[1].base_stat} </li>
-            </ul>
-            
-            <ul>
-            <li>Base Stat 1c: {pokemon.stats[2].base_stat} </li>
-            </ul>
-
-            <ul>
-            <li>Base Stat 1d: {pokemon.stats[3].base_stat} </li>
-            </ul>
-            
-            <ul>
-            <li>Base Stat 1e: {pokemon.stats[4].base_stat} </li>
-            </ul>
-
-            <ul>
-            <li>Base Stat 1f: {pokemon.stats[5].base_stat} </li>
-            </ul>
-          
-          
-          
-          
-          
-          
-          
-          </li>
+          </div>
         ))}
-      </ul>
-    </div>
+      </div>
+       
   );
 }
+
+
+
+
+// <ul>
+// {/* Pokemon Types */}
+// <li>Type: {pokemon.types[0].type.name} </li>
+// </ul>
+
+
+// {/* Height & Weight */}
+// <ul>
+// <li>Height: {pokemon.height}</li>
+// </ul>
+
+// <ul>
+// <li>Weight: {pokemon.weight}</li>
+// </ul>
+
+// {/* Regular Stats */}
+// <ul>
+// <li>Regular Stat 1: {pokemon.stats[0].stat.name} </li>
+// </ul>
+
+// <ul>
+// <li>Regular Stat 2: {pokemon.stats[1].stat.name} </li>
+// </ul>
+
+// <ul>
+// <li>Regular Stat 3: {pokemon.stats[2].stat.name} </li>
+// </ul>
+
+// <ul>
+// <li>Regular Stat 4: {pokemon.stats[3].stat.name} </li>
+// </ul>
+
+// <ul>
+// <li>Regular Stat 5: {pokemon.stats[4].stat.name} </li>
+// </ul>
+
+// <ul>
+// <li>Regular Stat 6: {pokemon.stats[5].stat.name} </li>
+// </ul>
+
+// {/* Base Stats */}
+// <ul>
+// <li>Base Stat 1a: {pokemon.stats[0].base_stat} </li>
+// </ul>
+
+// <ul>
+// <li>Base Stat 1b: {pokemon.stats[1].base_stat} </li>
+// </ul>
+
+// <ul>
+// <li>Base Stat 1c: {pokemon.stats[2].base_stat} </li>
+// </ul>
+
+// <ul>
+// <li>Base Stat 1d: {pokemon.stats[3].base_stat} </li>
+// </ul>
+
+// <ul>
+// <li>Base Stat 1e: {pokemon.stats[4].base_stat} </li>
+// </ul>
+
+// <ul>
+// <li>Base Stat 1f: {pokemon.stats[5].base_stat} </li>
+// </ul>
