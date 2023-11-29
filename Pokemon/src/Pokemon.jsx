@@ -44,7 +44,7 @@ export default function Pokemon() {
           <div className='card'key={index}>
           
           {/* Names */}
-            <p> {pokemon.name} </p>
+            <h1> {pokemon.name} </h1>
 
            {/* Images */}
             <img src={pokemon.sprites.other.dream_world.front_default} alt={pokemon.name} />

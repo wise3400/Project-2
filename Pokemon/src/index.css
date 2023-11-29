@@ -88,14 +88,26 @@ button:focus-visible {
   width: 11em;
   height: 11em;
   /* overflow: hidden; */
-  background-color: rgb(46, 169, 169);
-  font-weight: bold;
+   /* set size of card but still allow them to be arranged higher up with grid & auto */
+   width: 315px;
+   height: 500px;
+   /* serve as containers for card information - but with fixed sizes */
+   display: inline-grid;
+   /* there are 6 columns which helps with organization later */
+   grid-template-columns: auto auto auto auto auto auto;
+   /* thick yellow rounded border */
+   border: 10px solid gold;
+   border-radius: 20px;
+   padding: 5px;
+   background: linear-gradient(to bottom right, #d9e4ec, #adc1d1, #7d99af, #557792, #7d99af, #adc1d1);
   
 }
 
-.card p{
+.card h1{
   text-align: center;
   font-family: 'Pokemon Solid', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .card img {
