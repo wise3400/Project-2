@@ -91,7 +91,6 @@ button:focus-visible {
 }
 
 .full-card {
-  
   /* overflow: hidden; */
    /* set size of card but still allow them to be arranged higher up with grid & auto */
    width: 315px;
@@ -105,7 +104,6 @@ button:focus-visible {
    border-radius: 20px;
    padding: 5px;
    background: linear-gradient(to bottom right, #d9e4ec, #adc1d1, #7d99af, #557792, #7d99af, #adc1d1);
-  
 }
 
 .card h1{
@@ -119,9 +117,7 @@ button:focus-visible {
 }
 
 .card img {
-
   max-height: 90%;
   max-width: 90%;
-  
 }
 
