@@ -73,6 +73,13 @@ button:focus-visible {
   width: 100%;
 }
 
+h1
+{
+  font-family: 'Pokemon Solid', sans-serif;
+  text-align: center;
+  font-size: 4em;
+}
+
 .flex-parent {
   display: flex;
   flex-direction: row;
@@ -86,15 +93,19 @@ button:focus-visible {
 
 .card{
   width: 11em;
-  /* height: 11em; */
+  height: 20em;
   background-color: rgb(59, 147, 118);
+  text-align: center;
+  margin:auto;
 }
 
 .full-card {
   /* overflow: hidden; */
    /* set size of card but still allow them to be arranged higher up with grid & auto */
    width: 315px;
-   height: 500px;
+   height: 405px;
+   position: absolute;
+   color: black;
    /* serve as containers for card information - but with fixed sizes */
    display: inline-grid;
    /* there are 6 columns which helps with organization later */
@@ -106,8 +117,14 @@ button:focus-visible {
    background: linear-gradient(to bottom right, #d9e4ec, #adc1d1, #7d99af, #557792, #7d99af, #adc1d1);
 }
 
+li
+{
+  list-style: none;
+  text-align: left;
+}
+
 .card h1{
-  text-align: center;
+ 
   font-family: 'Pokemon Solid', sans-serif;
   font-size: 1.6em;
   font-weight: 600;
@@ -117,7 +134,26 @@ button:focus-visible {
 }
 
 .card img {
-  max-height: 90%;
-  max-width: 90%;
+  height: 10em;
+  width: 10em;
 }
 
+.more-button {
+  line-height: 40px;
+  font-size: 20px;
+  color: black;
+  padding: 0 20px;
+  background: lightblue;
+  border: 3px solid #003060;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+  
+}
+
+.more-button:hover {
+  background: #003060;
+  color: white;
+  position: relative;
+  top: 10px;
+  box-shadow: none;
+}
