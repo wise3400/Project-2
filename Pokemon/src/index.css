@@ -86,7 +86,7 @@ button:focus-visible {
 
 .card{
   width: 11em;
-  height: 11em;
+  /* height: 11em; */
   background-color: rgb(59, 147, 118);
 }
 
