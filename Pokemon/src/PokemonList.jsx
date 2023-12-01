@@ -10,9 +10,6 @@ export default function Pokemon() {
   const [thePokemons, setPokemons] = useState([]);
  
 
-  
-  
-  // CHAT GPT used here for debugging
   useEffect(() => {
     const getPokemon = async () => 
     {
