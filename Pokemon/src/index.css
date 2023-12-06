@@ -135,6 +135,10 @@ h1
 
 .head-text {
   position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   height: 10em;
   color: #003060;
 }
