@@ -1,12 +1,29 @@
 import React, { useEffect, useState } from 'react';
 
 
-export default function Pokemon({pokemon, index}) {
+export default function Pokemon({pokemon, index, showInfo, setShowInfo}) {
     
     const [isShown, setIsShown] = useState(false);
+    const [buttonText, setButtonText] = useState("More Info");
 
     const handleClick = event => {
+    
+
+      if(showInfo && !isShown)
+      {
+        return;
+      }
+      if(!isShown)
+      {
+        setButtonText("Close");
+      }
+      else
+      {
+        setButtonText("More Info");
+      }
+      setShowInfo(!isShown);
       setIsShown(!isShown);
+      
       
     };
   return (
@@ -19,7 +36,7 @@ export default function Pokemon({pokemon, index}) {
               {/* Images */}
                 <img className='main-img'src={pokemon.sprites.other.dream_world.front_default} alt={pokemon.name} />
               
-              <button className='more-button' onClick = {handleClick}>More Info</button>
+              <button className='more-button' onClick = {handleClick}>{buttonText}</button>
 
               {/* Show elements on click */}
               {isShown && (

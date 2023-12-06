@@ -8,7 +8,7 @@ import React, { useEffect, useState } from 'react';
 
 export default function Pokemon() {
   const [thePokemons, setPokemons] = useState([]);
- 
+  const [isInfoShown, setIsShown] = useState(false);
 
   useEffect(() => {
     const getPokemon = async () => 
@@ -43,7 +43,7 @@ export default function Pokemon() {
 
       <div className='flex-parent'>
         {thePokemons.map((pokemon, index) => (
-          <PokemonCard pokemon = {pokemon} index = {index} key = {index} />
+          <PokemonCard pokemon = {pokemon} index = {index} key = {index}  showInfo={isInfoShown} setShowInfo={setIsShown}/>
 
         ))}
       </div>
