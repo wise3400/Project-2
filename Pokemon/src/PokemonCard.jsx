@@ -46,11 +46,8 @@ export default function Pokemon({pokemon, index, showInfo, setShowInfo}) {
                   <div className='card-body'>
         
                       <div class='head-text'>
-                        <span>
-                        <p className= 'basic'>basic {pokemon.types[0].type.name} pokemon </p>
+                        <h2 className= 'basic'>Basic {pokemon.types[0].type.name} Pokemon </h2>
                         <h3 className='name'> {pokemon.name} </h3>
-                        </span>
-                        <span className='health'>{pokemon.stats[0].base_stat}{pokemon.stats[0].stat.name}</span>
                       </div>
 
                       <div className='img-frame'>
@@ -63,7 +60,9 @@ export default function Pokemon({pokemon, index, showInfo, setShowInfo}) {
                         </div>
                       </div>
 
-                      <li> <b>{pokemon.stats[1].stat.name}:</b> {pokemon.stats[1].base_stat}</li>
+                      <li><b>{pokemon.stats[0].stat.name}:</b> {pokemon.stats[0].base_stat}</li>
+                      <li><b>{pokemon.stats[1].stat.name}:</b> {pokemon.stats[1].base_stat}</li>
+                      <li><b>{pokemon.stats[2].stat.name}</b>  {pokemon.stats[2].base_stat}</li>
 
 {/*        
 
