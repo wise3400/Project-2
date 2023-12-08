@@ -15,7 +15,7 @@ export default function Pokemon() {
     {
       try 
       {
-        const fetchAPI1 = await fetch('https://pokeapi.co/api/v2/pokemon?limit=20');
+        const fetchAPI1 = await fetch('https://pokeapi.co/api/v2/pokemon?limit=500');
         const data1 = await fetchAPI1.json();
         const pokemonList = data1.results;
 
