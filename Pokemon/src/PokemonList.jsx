@@ -77,7 +77,6 @@ export default function Pokemon() {
           <option value="steel">Steel</option>
           <option value="fairy">Fairy</option>
         </select>
-        <button onClick={() => console.log(thePokemons)}></button>
         <div className='flex-parent'>
           {filteredPokemon.map((pokemon, index) => (
             <PokemonCard pokemon = {pokemon} index = {index} key = {index}  showInfo={isInfoShown} setShowInfo={setIsShown}/>
