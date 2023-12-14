@@ -14,6 +14,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+body
+{
+  width: 90%;
+  margin: auto;
+}
+
 /* 
 a {
   font-weight: 500;
@@ -105,8 +112,8 @@ h1
 {
   /* set relative position */
   position: relative;
-  left: 100%;
-  bottom: 90%;
+  right: 12%;
+  top: 13%;
   width: 14em;
   height: 20.5em;
 }
@@ -262,4 +269,11 @@ li
   letter-spacing: 0.022em;
   font-style: italic;
   z-index: 1;
+}
+
+select
+{
+  position: relative;
+  left: 47.25%;
+  font-size: 1.5em;
 }
